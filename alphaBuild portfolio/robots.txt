@@ -1,0 +1,12 @@
+# robots.txt — AlphaBuild AI Solutions
+# https://yourdomain.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Block any admin or private folders if you add them later
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
