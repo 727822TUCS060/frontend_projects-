@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="contact.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Spice Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">🌶️ Spice Garden</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="cta-button">Book Table</button>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Contact Header -->
+        <section class="contact-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with Spice Garden</p>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>45, Anna Salai<br>Trichy - 620001<br>Tamil Nadu, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                        <p class="small-text">Available 7 AM - 10 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <h3>Hours</h3>
+                        <p>Mon – Sun<br>7:00 AM – 10:00 PM<br>No holidays!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps -->
+        <section class="maps-section">
+            <div class="container">
+                <h2>Find Us on Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7669893391343!2d78.65948!3d10.797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf6bff8f8f8f9%3A0x1234567890!2sAnna%20Salai%2C%20Trichy!5e0!3m2!1sen!2sin!4v1234567890" 
+                        width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Special Request</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        ✓ Thank you! We'll contact you soon.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Section -->
+        <section class="whatsapp-section">
+            <div class="container">
+                <h2>Prefer WhatsApp?</h2>
+                <p>Chat with us directly on WhatsApp for quick responses!</p>
+                <a href="https://wa.me/919876543210" class="btn btn-whatsapp" target="_blank">Chat on WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Do you offer home delivery?</h3>
+                        <p>We primarily operate as a dine-in restaurant. However, for special events or bulk orders, please contact us directly at +91 98765 43210.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I make a reservation?</h3>
+                        <p>Yes! Please call us at +91 98765 43210 or use the "Book Table" button. We recommend reservations for groups of 5 or more.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you cater for events?</h3>
+                        <p>Absolutely! We offer catering services for weddings, corporate events, and celebrations. Contact us for details.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are you open on holidays?</h3>
+                        <p>Yes, we're open 7 days a week, 365 days a year from 7 AM to 10 PM. No holidays!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is your kitchen pure vegetarian?</h3>
+                        <p>Yes, 100%! Our kitchen uses separate equipment to ensure no cross-contamination with non-vegetarian items.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What payment methods do you accept?</h3>
+                        <p>We accept cash, credit cards, debit cards, and digital payment apps like Google Pay, PhonePe, and Paytm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Spice Garden</h4>
+                    <p>45, Anna Salai, Trichy - 620001<br>Tamil Nadu, India</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Sunday<br>7:00 AM – 10:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spice Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

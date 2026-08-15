@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Spice Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">🌶️ Spice Garden</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="cta-button">Book Table</button>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gallery Header -->
+        <section class="gallery-header">
+            <div class="container">
+                <h1>Our Gallery</h1>
+                <p>A glimpse into Spice Garden</p>
+            </div>
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="gallery-filter-btn active" data-filter="all">All</button>
+                    <button class="gallery-filter-btn" data-filter="food">Food</button>
+                    <button class="gallery-filter-btn" data-filter="interior">Interior</button>
+                    <button class="gallery-filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <!-- Masonry Gallery Grid -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://placehold.co/600x400?text=Food+1+Masala+Dosa" alt="Our signature Masala Dosa">
+                        <div class="gallery-overlay">
+                            <p>Our signature Masala Dosa</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior">
+                        <img src="https://placehold.co/600x500?text=Interior+1" alt="Restaurant ambiance">
+                        <div class="gallery-overlay">
+                            <p>Cozy dining ambiance</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://placehold.co/600x350?text=Food+2+Pongal" alt="Creamy Pongal">
+                        <div class="gallery-overlay">
+                            <p>Creamy Pongal with ghee</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://placehold.co/600x450?text=Event+1" alt="Special event">
+                        <div class="gallery-overlay">
+                            <p>Private event celebration</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://placehold.co/600x400?text=Food+3+Sambar" alt="Spiced Sambar">
+                        <div class="gallery-overlay">
+                            <p>Traditional Sambar recipe</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior">
+                        <img src="https://placehold.co/600x500?text=Interior+2+Kitchen" alt="Our kitchen">
+                        <div class="gallery-overlay">
+                            <p>Hygienic kitchen setup</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://placehold.co/600x350?text=Food+4+Coffee" alt="Filter Coffee">
+                        <div class="gallery-overlay">
+                            <p>Authentic South Indian Coffee</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://placehold.co/600x400?text=Event+2" alt="Customer gathering">
+                        <div class="gallery-overlay">
+                            <p>Happy customers dining</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://placehold.co/600x450?text=Food+5+Vada" alt="Crispy Vada">
+                        <div class="gallery-overlay">
+                            <p>Crispy Vada with chutney</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="interior">
+                        <img src="https://placehold.co/600x400?text=Interior+3" alt="Seating area">
+                        <div class="gallery-overlay">
+                            <p>Comfortable seating arrangements</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="food">
+                        <img src="https://placehold.co/600x500?text=Food+6+Dessert" alt="Sweet Payasam">
+                        <div class="gallery-overlay">
+                            <p>Delicious Payasam dessert</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="https://placehold.co/600x400?text=Event+3+Wedding" alt="Wedding event">
+                        <div class="gallery-overlay">
+                            <p>Wedding catering service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Spice Garden</h4>
+                    <p>45, Anna Salai, Trichy - 620001<br>Tamil Nadu, India</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Sunday<br>7:00 AM – 10:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spice Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

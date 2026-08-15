@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="menu.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Spice Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">🌶️ Spice Garden</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="cta-button">Book Table</button>
+            <div class="menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Menu Header -->
+        <section class="menu-header">
+            <div class="container">
+                <h1>Our Menu</h1>
+                <p>Authentic South Indian Vegetarian Cuisine</p>
+            </div>
+        </section>
+
+        <!-- Filter Tabs -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+                    <button class="filter-btn" data-filter="lunch">Lunch</button>
+                    <button class="filter-btn" data-filter="snacks">Snacks</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                    <button class="filter-btn" data-filter="beverages">Beverages</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Breakfast Items -->
+                    <div class="menu-item" data-category="breakfast">
+                        <img src="https://placehold.co/400x300?text=Idli+Sambar" alt="Idli Sambar">
+                        <div class="item-content">
+                            <h3>Idli Sambar <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Soft idlis with spiced sambar and chutneys</p>
+                            <div class="item-price">₹50</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast">
+                        <img src="https://placehold.co/400x300?text=Masala+Dosa" alt="Masala Dosa">
+                        <div class="item-content">
+                            <h3>Masala Dosa <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Crispy dosa with spiced potato filling</p>
+                            <div class="item-price">₹80</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast">
+                        <img src="https://placehold.co/400x300?text=Pongal" alt="Pongal">
+                        <div class="item-content">
+                            <h3>Pongal <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Creamy rice and lentil dish with ghee</p>
+                            <div class="item-price">₹70</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast">
+                        <img src="https://placehold.co/400x300?text=Upma" alt="Upma">
+                        <div class="item-content">
+                            <h3>Upma <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Semolina cooked with vegetables and spices</p>
+                            <div class="item-price">₹60</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="breakfast">
+                        <img src="https://placehold.co/400x300?text=Poori+Bhaji" alt="Poori Bhaji">
+                        <div class="item-content">
+                            <h3>Poori Bhaji <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Puffy poori with spiced potato curry</p>
+                            <div class="item-price">₹75</div>
+                        </div>
+                    </div>
+
+                    <!-- Lunch Items -->
+                    <div class="menu-item" data-category="lunch">
+                        <img src="https://placehold.co/400x300?text=Full+Meals" alt="Full Meals">
+                        <div class="item-content">
+                            <h3>Meals (Full) <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Rice, sambar, 3 curries, papad, dessert</p>
+                            <div class="item-price">₹120</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="lunch">
+                        <img src="https://placehold.co/400x300?text=Chapati+Set" alt="Chapati Set">
+                        <div class="item-content">
+                            <h3>Chapati Set <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>3 chapatis with dal and sabzi</p>
+                            <div class="item-price">₹90</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="lunch">
+                        <img src="https://placehold.co/400x300?text=Curd+Rice" alt="Curd Rice">
+                        <div class="item-content">
+                            <h3>Curd Rice <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Cooling curd rice with pickle</p>
+                            <div class="item-price">₹60</div>
+                        </div>
+                    </div>
+
+                    <!-- Snacks Items -->
+                    <div class="menu-item" data-category="snacks">
+                        <img src="https://placehold.co/400x300?text=Vada" alt="Vada">
+                        <div class="item-content">
+                            <h3>Vada <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Crispy lentil fritters with chutney</p>
+                            <div class="item-price">₹40</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="snacks">
+                        <img src="https://placehold.co/400x300?text=Bajji" alt="Bajji">
+                        <div class="item-content">
+                            <h3>Bajji <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Battered and fried vegetables</p>
+                            <div class="item-price">₹50</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="snacks">
+                        <img src="https://placehold.co/400x300?text=Samosa" alt="Samosa">
+                        <div class="item-content">
+                            <h3>Samosa <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Crispy pastry with spiced filling</p>
+                            <div class="item-price">₹30</div>
+                        </div>
+                    </div>
+
+                    <!-- Desserts Items -->
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://placehold.co/400x300?text=Kesari" alt="Kesari">
+                        <div class="item-content">
+                            <h3>Kesari <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Semolina halwa with saffron</p>
+                            <div class="item-price">₹50</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://placehold.co/400x300?text=Payasam" alt="Payasam">
+                        <div class="item-content">
+                            <h3>Payasam <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Sweet rice pudding with cardamom</p>
+                            <div class="item-price">₹60</div>
+                        </div>
+                    </div>
+
+                    <!-- Beverages Items -->
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://placehold.co/400x300?text=Filter+Coffee" alt="Filter Coffee">
+                        <div class="item-content">
+                            <h3>Filter Coffee <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Strong South Indian filter coffee</p>
+                            <div class="item-price">₹30</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://placehold.co/400x300?text=Masala+Tea" alt="Masala Tea">
+                        <div class="item-content">
+                            <h3>Masala Tea <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Spiced milk tea</p>
+                            <div class="item-price">₹25</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <img src="https://placehold.co/400x300?text=Lime+Soda" alt="Fresh Lime Soda">
+                        <div class="item-content">
+                            <h3>Fresh Lime Soda <span class="veg-badge">🟢 Veg</span></h3>
+                            <p>Sweet or salted lime soda</p>
+                            <div class="item-price">₹40</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Spice Garden</h4>
+                    <p>45, Anna Salai, Trichy - 620001<br>Tamil Nadu, India</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Sunday<br>7:00 AM – 10:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spice Garden. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <span>💬</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
